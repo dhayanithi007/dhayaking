@@ -11,4 +11,10 @@ rm -rf init_autoloader.php
 rm init_autoloader.php
 git commit -a -m 'init_autoloader deleted'
 git log
-git checkout 
+git checkout
+
+
+
+
+git config --global http.proxy http://web-proxy.sgp.hpecorp.net:8080
+ 
