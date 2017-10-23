@@ -1,0 +1,133 @@
+proxy=http://web-proxy.sgp.hpecorp.net:8080
+art.fit-19
+
+virutual machine:
+bare metal
+type:1             DC->ESXI
+                  |
+      vsphere- ESXI->20 gb
+vm vm 
+| |
+exsi(VM)              PHYSICAL->bare metal
+tyoe2 w.s
+os
+h/w
+
+esxi- 20 gb of ram :in old days-static allocation(it allocates dynamically)
+
+physical
+
+
+fault tolerance:within esxi also we use do fault tolerance.
+advanage -more functionality it will become more vunerability
+if one server goes down another one can be replaced.
+
+
+it can reused it.os can be moved from one place to another.
+moving virutulization  will stored in data center. and moved into another esxi
+
+
+
+type 2:
+os  os     os
+|   |      |
+hypervisor.type 
+os
+hardware
+
+
+eg:vmbox,hypervisor
+
+two types:
+ 
+ovf-open virtulization format
+ova-open virtulization appliance
+
+metadata files sAVE IN .OVF
+.ISO-
+.OVF 
+
+
+create a three virutulization machine ram os should be same.
+clone a virutal machine.-same copy
+
+
+
+
+esxi
+vsphere client:
+install windows server
+on top that install vsphere
+1.reduce ram of exsi:-
+
+
+add host
+
+give ip address
+give root 
+give password
+c
+
+vsphere clients
+exsi
+vcenter server we connect to vsphere clients
+vsphere web client
+
+                     --------------
+ESXI - - - - - - -          - ->vsphere client
+physical servr 
+
+VM      VM        vcenter service            ^
+|	|         ^                          |  
+TYPE-1 ESXI-------|-------------------------
+TYPE-2 WORKSTATION
+OS -WINDOWS----------------------------------^
+                                             |
+H/W	-LAPTOP
+two ways to connect with vcenter.
+vsphere client installed in windows machine
+vsphere web client -come with vcenter 
+vcenter is more powerful
+
+
+we have esxi server....vsphere client,vcenter server,vpshere web client.
+
+.................................................................
+APP  APP vcenter                                                |
+OS   OS   server-----------------------                         |
+         installed on                    vsphere client         |
+          windows sever                                         |
+                                                                |
+    ESXI SERVER-------------------------                        |
+VSPHERE PRODUCT SUITE                                           |
+                                                                |
+.................................................................
+vsphere client                                vsphere web client
+1.locally installed app                           1.web app
+2.windows os only                                  2.cross platform
+3.can connects vcenter server or directly          3.can connect to only vcenter server
+to hosts                   
+4.full range of admin functionality                 4.subset of full functionality
+
+WINDOWS SERVER:
+windows-Admin@123
+LOCALSERVER-
+CHANGE _COMPUTER NAME 
+REMOTE DESKTOP_ENABLE
+TURN OFF FIREWALL
+ETHERNET0
+
+~internet explorer -enhanced security configuration.
+~httpd server-
+~All server-All system connected to particular system
+~localserver-connection of a local system
+
+ vcenter passwd->Welcome@123
+username:administrator@vsphere.local
+
+click on bangalore datacentre
+decrease exsi ram by 2gb
+
+what is cluster?
+what is host
+how we can add host in diff data center

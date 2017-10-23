@@ -1,0 +1,42 @@
+SELECT p.project_id, p.project_name
+                        FROM pm_projects p
+                       WHERE upper(p.project_name) like upper('?%')
+                         and (p.project_name LIKE UPPER(SUBSTR('?',1,1)) || '%'
+                          OR p.project_name like LOWER(SUBSTR('?',1,1)) || '%')
+                       ORDER BY upper(p.project_name)
+
+
+C:\Users\srindhay\AppData\Local\Programs\Python\Python36
+
+
+My First Script
+#l::
+Run "mailto:NAME@inverness.uhi.ac.uk?subject=Autohotkey email test&bcc=NAME@inverness.uhi.ac.uk&cc=NAME@inverness.uhi.ac.uk&body=
+(
+Dear Sir
+
+Any text between the top and bottom parentheses is treated literally, including commas and percent signs.
+By default, the hard carriage return (Enter) between the previous line and this one is also preserved.
+    By default, the indentation (tab) to the left of this line is preserved.
+
+All of this text can be input to the email without worrying about the length of the text or any other problems.  The text I am currently inputting is way longer than any line in the Notepad file can cope with, in other words it gets to the end of the line and wraps itself. At least that is the theory but it seems to go on for ever and never actually gets to the end of the line.
+
+See continuation section for how to change these default behaviors.
+)"
+return
+
+
+
+
+
+^e::
+m := ComObjCreate("Outlook.Application").CreateItem(0)
+m.Subject := "Hi There"
+m.To := "nivetha-rani-n@hpe.com"
+m.Body :="Here is the body... `n`n And the really cool thing about using this method, `n`n`n`n`n`n is, you can have what ever you want as the body and `n`n`n`n`n`n not worry about how long it is...or worry about the non-formatting issues that come from the mailto: command`n`n`n`n ...yes, that is a whole bunch of new Lines to show you how you can format this however you want...`n`n`n`n`n`n`n`n AND IT WORKS"
+m.Display ;to display the email message...and the really cool part, if you leave this line out, it will not show the window............... but the m.send below will still send the email!!!
+m.Send ;to automatically send and CLOSE that new email window...  
+
+
+
+

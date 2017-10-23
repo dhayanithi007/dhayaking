@@ -1,0 +1,29 @@
+kbs-cluster services
+desired state management
+api----
+worker---container host---kublet process reponsible communicate with each other
+worker---container host
+worker---
+
+
+
+use case----
+app.yaml
+deployment--pod configuration smallest unit deployment -object model
+
+
+pod:::
+to run pod-- we need container image 
+replica-3
+simple python
+
+passwordFile = open('SecretPasswordFile.txt')
+? secretPassword = passwordFile.read()
+? print('Enter your password.')
+  typedPassword = input()
+? if typedPassword == secretPassword:
+?    print('Access granted')
+?    if typedPassword == '12345':
+?       print('That password is one that an idiot puts on their luggage.')
+  else:
+?    print('Access denied')

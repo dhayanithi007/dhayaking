@@ -1,0 +1,77 @@
+PPM Modules
+Project and Portfolio Management
+Deployment Management - KDLV_<Table_Name>
+Demand Managment - kcrt_<table_name>
+Project Managment - pm_
+Financial Managmnt - FM_
+Time managemnt - TM_
+Resource Managment - KRSC_
+
+Managing of res in project or in enterprise.
+
+How to generate Time Periods?
+Base table name for time periods?
+Demo User creation with PM Access.
+Demo User creation with RM access.
+sh ./kGenFiscalPeriods.sh -startYear 2007 -endYear 2025
+
+
+
+
+Portfolio Management
+Adminstration- KNTA_
+
+1. What is validation and types of validation?
+
+2. What is workflow?
+
+configuration module
+designing workflow-----
+Analyze the components of a business process.
+Translate a business process into terms in PPM Center.
+Design a complete workflow
+
+-@Workflow steps represent the activities needed to process a request or package.
+-Decision steps are manual activities performed outside PPM Center.
+-Execution steps are activities automated through PPM Center.
+-Transitions define the route the process should take based on the results of workflow steps.
+-Workflow step security defines which users have permission to act on a workflow step.
+-Notifications are automated emails that alert users on the status of workflow steps.
+
+
+3. What is request type and Request type header?
+4. What is batch_number?
+5. What is project type?
+
+1. Project Create
+Project info - PM, Duration, no. of resources, tasks/activities
+
+
+US Region - PMO/Project manager -> RM ->Assign
+
+Staffing Profile positions - (Requested, New, Soft-booked) - Demo Pending
+
+24th
+
+Dhaya - RM
+Vicky - PM
+nithin- PM
+
+1. Create Resource pool.
+2. Assign the users in created resource pool.
+3. Assign some roles to newly created users.
+4. Create Org Unit and assign the users to created Org Unit.
+5. Create 3users with TM license & TM Security groups.
+
+
+
+KNTA_USERS USER_ID CREATED_BY
+KNTA_USERS USER_ID LAST_UPDATED_BY
+PM_PROJECTS PROJECT_ID PROJECT_ID
+PM_PROJECT_TYPES PROJECT_TYPE_ID PROJECT_TYPE_ID
+PM_INDICATOR_
+POLICIES PROJECT_TYPE_ID PROJECT_TYPE_ID
+PM_SYNCHED_FIELDS PROJECT_TYPE_ID PROJECT_TYPE_ID
+PM_PROJECT_TYPE_
+CUSTOM_FIELDS PROJECT_TYPE_ID PROJECT_TYPE_ID
+

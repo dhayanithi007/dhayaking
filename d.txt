@@ -1,0 +1,15 @@
+9566738273
+
+
+“Dream big, work hard.” ~ Robert Downey
+
+
+SELECT  qfpl.PROJECT_NAME,qfpl.PROJECT_NAME2, qfpl.WBS_ID, qfpl.END_DATE, qfpl.PROJECT_TYPE, qfpl.DELIVERY_TYPE, qfpl.PORTFOLIO, qfpl.PDM, qfpl.GDC_PM, qfpl.QF_EXCLUSION, qfpl.EMPLOYEE_ID, qfpl.EMPLOYEE_NAME,qfpl.GDC_REGION, gwi.PRO_REGION REGION, qfpl.MAT_PROJECT_STATUS,qfpl.REMARKS,qfpl.REASON_FOR_EXCEPTION,qfpl.PROJECT_CODE,qfpl.CREATED FROM QUALITY_FIRST_PROJ_LIST qfpl,gdc_wbs_id gwi WHERE gwi.PROJECT_WBS=qfpl.WBS_ID
+
+
+
+
+ select pm.project_id,pm.project_name,pm.project_type_id,pm.status us.user_id,us.username,us.start_date,us.end_date,us.region_id from pm_projects pm,knta_users us;
+
+
+us.user_id,us.username,us.start_date,us.end_date,us.region_id from knta_users us;

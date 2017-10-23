@@ -1,0 +1,5 @@
+ksc_run_jsp_report /web/knta/crt/rpt/project_details.jsp
+REPORT_ID=[RP.REPORT_SUBMISSION_ID]
+USER_ID=[RP.CREATED_BY]
+OUT_BASEFILE=[RP.FILENAME]
+ksc_end_report_parameters
