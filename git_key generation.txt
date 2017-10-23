@@ -1,0 +1,14 @@
+ssh-keygen -t rsa -C 'dhayanithivasan@gmail.com'
+cat git_rsa
+eval $(ssh-agent)
+ssh-add git_rsa
+ssh -T git@github.com
+git remote add origin git@github.com:dhayanithi007/dhayaking.git
+git add .
+git commit -m "initial commit"
+git push origin master
+rm -rf init_autoloader.php
+rm init_autoloader.php
+git commit -a -m 'init_autoloader deleted'
+git log
+git checkout 
